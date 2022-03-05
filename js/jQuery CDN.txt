@@ -1,0 +1,4 @@
+jQuery CDN:
+Google Hosted Libraries
+
+https://developers.google.com/speed/libraries/#jquery

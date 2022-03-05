@@ -1,0 +1,918 @@
+@charset "utf-8";
+/* CSS Document */
+
+html{
+	font-size: 62.5%;
+	/*初期値16px/62.5%=10px=1rem*/
+}
+
+/*--------------------------
+	共通の設定 /SP 320px(縦)からの設定 /
+-------------------------- */
+/*ローダーの詳細*/
+
+#is-loading {
+ display: block;
+ position: fixed;
+ width: 100%;
+ height: 100%;
+ top: 0px;
+ left: 0px;
+ background: #000;
+ z-index: 8;
+}
+#loading {
+ display: none;
+ position: fixed;
+ top: 50%;
+ left: 50%;
+ width: 200px;
+ height: 200px;
+ margin-top: -100px;
+ margin-left: -100px;
+ text-align: center;
+ color: #fff;
+ z-index: 9;
+}
+
+/*ここからボディー*/
+
+
+body {
+    font-size: 1.6em;
+    font-family: 'Kosugi Maru', sans-serif;
+    background-color: #575757;
+    background-image: url("../img/bdybgimg_mono.png");
+    background-size:contain;
+    background-position: top;
+}
+
+h2,h3{
+	color:#E3DC28;
+    background-color:#1A1200;
+    line-height: 3rem;
+    border-bottom: solid 1px #008c31;
+    border-right: solid 5px #008c31;
+    box-shadow: 2px 5px 5px 1px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+}
+
+
+ul {
+    list-style:none;
+}
+
+
+.unit{
+    padding-top:20px;
+    padding-bottom: 10px;
+    position:relative;
+}
+.kaijo{
+	padding-top: 0px;
+}
+.cont{
+    padding: 0 10px;
+}
+
+/*.unit:nth-child(even){
+    background-color: #999;
+}
+.unit:nth-child(odd){
+    background-color: #456;
+}*/
+
+
+#wrapper{
+    background-image: url("../img/bgimg_mono.png");
+    /*background-color: rgba(0,0,0,1.00);*/
+    overflow: hidden;
+    position:relative;
+}
+
+/*.unit:nth-of-type(2) .cont,
+.unit:nth-of-type(3) .cont*/
+
+/*この辺はヘッダーらしい*/
+header{
+    position:relative;
+    padding: 20px;
+}
+header{
+/*    background-image: url("../img/top_imaige.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: top center;*/
+/*    height: 100vh;*/
+}
+
+#rogo_top{
+    width: 50.133%;/*188/375*/
+    position: absolute;
+    top:20px;
+    reft:20px;
+}
+
+
+#top_sns{
+    height: 96vh;
+    display: flex;
+    /*width: 100%;*/
+    justify-content:flex-end;
+    align-items: flex-end;
+    
+}
+
+#twitter{
+    width:28%;/*105/375*/
+    /*display: block;*/
+}
+#facebook{
+    width:28%;/*105/375*/
+    /*display: block;*/
+}
+
+
+
+#nav{
+    display: none;
+}
+
+
+
+/*ここより下　コンセプトよ♪*/
+
+
+#consept h2{
+    text-align: center;
+    line-height: 3rem;
+	margin: 0;
+/*    padding:10px 20px 20px;
+	background-color:rgba(255,255,255,0.60);*/
+/*	border-radius: 20px;*/
+}
+
+#consept h2{
+    line-height: 3rem;
+}
+
+.conse_image{
+	/*width: 100%;*/
+	position: relative;
+}
+
+.conse_image p:first-child{
+    color:#E3DC28;
+    background-color:#1A1200;
+    border/*-bottom*/: solid 5px #008c31;
+    box-shadow: 2px 5px 5px 1px rgba(0, 0, 0, 0.3);
+    line-height: 1.5rem;
+    /*display: block;*/
+	padding: 5px 20px;
+    
+	 
+}
+
+.conse_image .left_top{
+     border-radius: 0 40px 0 40px;
+  /*  border-left: solid 5px #008c31;*/
+	position: absolute;
+	top:10%;
+    left: 2%;
+	z-index: 5;
+}
+
+.conse_image .right_bottom{
+     border-radius: 40px 0 40px 0;
+   /* border-right: solid 5px #008c31;*/
+    position:absolute;
+    bottom: 20%;
+    right: 2%;
+	z-index: 5;
+}
+
+.conse_image:nth-child(even) img{
+    border-radius: 0 100px 0 0;
+    box-shadow:
+    0 1.9px 2.5px rgba(0, 0, 0, 0.057),
+    0 5px 6.1px rgba(0, 0, 0, 0.076),
+    0 10.1px 11.4px rgba(0, 0, 0, 0.086),
+    0 19.2px 19.8px rgba(0, 0, 0, 0.092),
+    0 38.4px 34.8px rgba(0, 0, 0, 0.1),
+    0 101px 74px rgba(0, 0, 0, 0.13);
+}
+
+.conse_image:nth-child(odd) img{
+    border-radius: 0 0 0 100px;
+    box-shadow:
+    0 1.9px 2.5px rgba(0, 0, 0, 0.057),
+    0 5px 6.1px rgba(0, 0, 0, 0.076),
+    0 10.1px 11.4px rgba(0, 0, 0, 0.086),
+    0 19.2px 19.8px rgba(0, 0, 0, 0.092),
+    0 38.4px 34.8px rgba(0, 0, 0, 0.1),
+    0 101px 74px rgba(0, 0, 0, 0.13);
+}
+
+
+
+/*ここより下　アクセスと営業時間よ♪*/
+.disblo dd{
+    display: block;
+}
+
+.company_01{
+    margin-bottom: 10px;
+}
+
+.company_01,.company_02{
+	font-size: 16px;
+	line-height: 2rem;
+}
+
+
+.company_01 dl,.company_02 dl {
+display: flex;
+flex-flow: row wrap;
+width: 100%;
+}
+.company_01 dt,.company_02 dt {
+flex-basis: 30%;
+padding: 10px;
+background-color:rgba(241,241,241,0.80);
+}
+.company_01 dd,.company_02 dd {
+flex-basis: 70%;
+padding: 10px;
+background-color:rgba(255,255,255,0.90);
+}
+@media screen and (max-width: 559px) {
+.company_01 dl,.company_02 dl {
+flex-flow: column;
+}   
+}
+
+/*さしてこーぜー*/
+#pin{
+    position:relative;
+}
+
+#p01{
+    width: 13%;
+    position:absolute;
+    bottom:32.385%;/*145/462*/
+    right:20%;/*104/462*/
+    /*z-index: 100;*/
+}
+
+#p02{
+    width: 8%;
+    position:absolute;
+    bottom:49%;
+    right:0;
+    /*z-index: 100;*/
+}
+
+#p03{
+    width: 8%;
+    position:absolute;
+    bottom:49%;
+    left: 43%;/*104/462*/
+    /*z-index: 100;*/
+}
+
+#p04{
+    width: 8%;
+    position:absolute;
+    bottom:49%;
+    right:37%;
+    /*z-index: 100;*/
+}
+
+#p05{
+    width: 8%;
+    position:absolute;
+    bottom:49%;
+    right:14%;/*104/462*/
+    /*z-index: 100;*/
+}
+
+#p06{
+    width: 8%;
+    position:absolute;
+    bottom:17%;
+    right:26%;/*104/462*/
+    /*z-index: 100;*/
+}
+
+
+#stgi{
+    width:35%;
+    position:absolute;
+    top:5%;
+    right:26%;
+    /*z-index: 100;*/
+}
+
+#stgi02{
+    width:35%;
+    position:absolute;
+    top:2%;
+    right:4%;
+    /*z-index: 100;*/
+}
+
+#karasi{
+    display: none;
+}
+
+/*お散歩*/
+.korokoro p{
+    width: 100px;
+}
+
+.korokoro {
+  animation: korokoro 5s linear 0s infinite;
+}
+
+@keyframes korokoro {
+  0%   { transform: translate(0%, 0%); }
+  100% { transform: translate(100%, 0%) rotate(0deg); }
+}
+
+/*ここからはmenuよ*/
+/*menutext要注意*/
+#menu{
+	background-image: url("../img/menu_bg.png");
+	background-repeat: no-repeat;
+    background-size:cover;
+    background-position: top center;
+	height: 50px;
+	font-weight: bolder;
+	font-size: 2.7rem;
+	line-height: 3rem;
+	vertical-align: middle;
+	padding: 10px 0 10px 30px;
+}
+
+.txt {	
+	position: relative;
+}
+
+#tex{
+	width: 73%;
+	flex-wrap: wrap;
+	background-color: rgba(255,255,255,0.40);
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);    
+}
+
+#tex h3{
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+     text-align: center;
+    margin-bottom: 10px;
+}
+
+
+#tex ul,#tex li{
+    font-weight: bold;
+    text-align: center;
+    line-height: 2.5rem;
+    padding:5px 5px;
+    
+}
+
+#tex ul{
+    background-color: rgba(255,255,255,0.20);
+		/*rgba(255,255,0,0.50);*/
+    /*margin-bottom: 10px*/
+}
+
+.sukima{
+    margin-bottom: 10px;
+}
+
+#tex li{background-color:rgba(255,255,0,0.2);
+	/* rgba(19,252,1,0.70)*/
+}
+
+
+/*menu背景画像の調整*/
+
+#hidari,#migi{
+	display: flex;
+	justify-content:space-between;
+	flex-wrap: wrap;
+}
+
+#iukotokiku p{
+	width: 50%;
+}
+#iukotokiku img{
+  box-shadow:
+    0 1.9px 2.5px rgba(0, 0, 0, 0.057),
+    0 5px 6.1px rgba(0, 0, 0, 0.076),
+    0 10.1px 11.4px rgba(0, 0, 0, 0.086),
+    0 19.2px 19.8px rgba(0, 0, 0, 0.092),
+    0 38.4px 34.8px rgba(0, 0, 0, 0.1),
+    0 101px 74px rgba(0, 0, 0, 0.13);
+}
+
+.kuuhaku {
+    width: 50%;
+}
+.kuuhaku h3,.kuuhaku ul li{
+    display: none;
+}
+
+/*ここから先、紹介ページ*/
+
+
+.nagamine img{
+    background-image: url("../img/bgi_nagamine.png");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: top center;  
+}
+
+.sinke img{
+    background-image: url("../img/bgi_sinke.png");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: top center;
+}
+
+.event_block02 h4{
+	font-size: 2.5rem;
+	line-height: 3rem;
+	font-weight: bold;
+	padding: 10px;
+	/*margin-bottom: 20px;*/
+}
+
+.event_block02{
+    padding: 20px;
+    background-color:#FFFFFF;
+    flex-wrap: wrap;
+}
+.event_block02 p{
+    font-size:　4rem;
+    line-height: 3rem;
+}
+
+#saigo{
+	padding: 20px;
+	font-size:　4rem;
+    line-height: 3rem;
+	
+}
+
+    .tate{
+        display:block;
+    }
+    
+    .hidariwaku,.migiwaku{
+        display:none;
+    }
+
+
+/*ここからウーバー*/
+
+.event_block ol{
+    
+    padding:10px 0 0 20px;
+    line-height: 2.2rem;
+    font-size: 2rem;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.event_block{
+    font-size:1.8rem;
+    line-height: 2rem;
+    padding: 25px;
+     background-color:rgba(255,255,255,0.8);
+    flex-wrap: wrap;
+}
+
+
+/*ここより下　イベントよ♪*/
+/*.cont_02 p:last-child,.cont_02 ol*/
+
+
+.slider li{
+    background-color:#ffff00;
+    
+}
+
+.slider li img{
+    border/*-bottom*/: solid 5px #008c31;
+    border-radius: 0 0 0 100px;
+    box-shadow:
+    0 1.9px 2.5px rgba(0, 0, 0, 0.057),
+    0 5px 6.1px rgba(0, 0, 0, 0.076),
+    0 10.1px 11.4px rgba(0, 0, 0, 0.086),
+    0 19.2px 19.8px rgba(0, 0, 0, 0.092),
+    0 38.4px 34.8px rgba(0, 0, 0, 0.1),
+    0 101px 74px rgba(0, 0, 0, 0.13);
+    
+}
+
+.inner_02 h3{
+    text-align: center;
+    font-size: 1.3em;
+    line-height:1.5em;
+}
+
+
+.event_text{
+	text-align: center;
+    font-size:2rem;
+    line-height: 3rem;
+    padding: 25px;
+    background-color:rgba(255,255,255,01);
+    flex-wrap: wrap;
+}
+
+/*ここからはフッターらしい*/
+footer{
+    background-color: #1A1200;
+    padding: 10px;
+    /*height: 150px;*/
+    position:relative;
+	width: 100%;
+	/*height: 20vh;*/
+	/*display: flex;
+	justify-content: space-between;*/
+    
+}
+/*footer:last-child{
+	justify-content: flex-end;
+	align-items: flex-end;
+}*/
+footer p img{
+    width: 30%;/*100/375*/
+/*    position:absolute;
+
+    top:-50px;*/
+}
+
+#futer{
+	color: #fff;
+	position:absolute;
+	top: 5px;
+	right: 20px;
+	text-align: center;
+}
+
+footer ul{
+    float: left;
+    position: absolute;
+    right:0px;
+    bottom: 20px;
+}
+
+footer li{
+    float: left;
+    width: 29%;
+}
+
+/*--------------------------
+	タブレット/TB~PC(s) /768pxから1019pxまでの設定 /
+-------------------------- */
+
+@media screen and (min-width:768px){
+	/*TB用のCSSをここに記述*/
+
+    body{
+        margin: 0 auto;
+ /*       max-width: 1020px;*/
+    }
+    
+    #wrapper{
+        overflow: hidden;
+    }
+    /*ハンバーガーナビ*/
+    .openbtn{
+        display: none;
+    }
+    
+    #nav{
+        display: block;
+    }
+    
+
+	
+    h2,h3{
+    font-size:2rem;
+    line-height: 3rem;
+    margin-bottom: 20px;
+}
+	
+
+    
+ 
+    
+    /*この辺はヘッダーらしい*/
+    
+#rogo_top{
+    width: 30%;/*188/1020*/
+    position: absolute;
+    top:20px;
+    reft:25px;/*20/375*/
+}
+
+
+#twitter{
+    width:10.294%;/*105/1020*/
+    /*display: block;*/
+}
+#facebook{
+    width:10.294%;/*105/1020*/
+    /*display: block;*/
+    }
+    
+    /*ここより下　コンセプトよ♪*/
+    
+    
+    
+.conse_image:nth-child(even){
+	margin-right: 20%;
+    margin-bottom: 20px;
+}
+
+.conse_image:nth-child(odd){
+    margin-left: 20%;
+    margin-bottom: 20px;
+    }    
+    
+    .conse_image:last-child{
+        margin-bottom: 0;
+    }
+    
+/*ここより下　アクセスと営業時間よ♪*/
+    #access{
+        display: flex;
+        justify-content: space-between;
+        /*align-items: center;*/   
+    }
+    
+    #map{
+        width:100%;
+    }
+    
+    #access{
+        padding:0 15px;
+    }
+
+    .conse_image p:first-child{
+        display: block;
+        padding: 20px;
+        font-size: 2rem;
+        line-height: 2.3rem;  
+}
+    
+    .company_01 dl {
+        display: flex;
+        flex-flow: row wrap;
+        width: 100%;
+    } 
+  
+    .yoko{
+        position:relative;
+    }
+    #karasi{
+    position:absolute;
+    bottom: -20px;
+    right: 0px;
+    display: block;
+    width: 50%;
+}
+
+
+    /*ここからはmenuよ*/
+.txt {	
+	position: relative;
+}
+    .kuuhaku h3,.kuuhaku ul li{
+    display: block;
+}
+    #tex ul,#tex li,#tex h3{
+        display: none;
+    }
+    #iukotokiku p{
+	width: 50%;
+}
+    .kuuhaku {
+    width: 50%; 
+}
+
+    #hidari{
+        float: left;
+    }
+    #migi{
+        float: right;
+    }
+    #iukotokiku{
+        overflow: hidden;
+    }
+    
+#hidari,#migi{
+    width: 50%;
+	display: flex;
+	justify-content:center;
+	flex-wrap: wrap;
+}
+
+
+.kuuhaku h3{
+    font-size: 2rem;
+    line-height:2.5rem;
+    text-align: center;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+
+.kuuhaku ul,.kuuhaku li{
+    font-weight: bold;
+    text-align: center;
+    line-height: 1em;
+    line-height: 2em;
+    /*padding:5px 5px 5px;*/
+    background-color: rgba(255,255,255,0.50);
+}
+
+#tex ul{
+    background-color:rgba(255,255,0,0.50);
+    /*margin-bottom: 10px*/
+}
+
+.sukima{
+    margin-bottom: 10px;
+}
+
+#tex li{background-color: rgba(19,252,1,0.70)
+}
+
+
+
+
+#iukotokiku img{
+  box-shadow:
+    0 1.9px 2.5px rgba(0, 0, 0, 0.057),
+    0 5px 6.1px rgba(0, 0, 0, 0.076),
+    0 10.1px 11.4px rgba(0, 0, 0, 0.086),
+    0 19.2px 19.8px rgba(0, 0, 0, 0.092),
+    0 38.4px 34.8px rgba(0, 0, 0, 0.1),
+    0 101px 74px rgba(0, 0, 0, 0.13);
+}
+/*紹介,イベントよりCSS引用あり*/
+    .cont_03{
+		width:100%;/*890/1020*/
+		margin:0 auto;
+		display: flex;
+		justify-content: center;
+	}
+    .syokai{
+        width: 50%;
+    }
+    
+    .event_block02{		
+        width:50%;/*:56.179%;*//*500/890*/
+        line-height: 2rem;
+        font-size:1.5rem;
+	}
+    
+    .tate{
+        display:none;
+    }
+    
+    .hidariwaku,.migiwaku{
+        display:block;
+    }
+	
+	.event_block02 h4{
+	font-size: 2.5rem;
+	line-height: 3rem;
+	font-weight: bold;
+	padding: 10px;
+	/*margin-bottom: 20px;*/
+}
+
+.event_block02{
+    padding: 30px;
+}
+.event_block02 p{
+    font-size:　5rem;
+    line-height: 4rem;
+}
+
+    /*ここより下　イベントよ♪*/
+    
+inner_02 h3{
+	width:42.647%;/*435/1020*/
+	line-height: 90px;
+	font-size: 36px;
+	text-align: left;
+	padding-left:1em;
+    margin-bottom: 50px;
+}
+	
+
+	.cont_02{
+		width:87.254%;/*890/1020*/
+		margin:0 auto;
+		display: flex;
+		justify-content: center;
+	}
+    
+    .mirror{
+        flex-direction: row-reverse;
+    }
+	.cont_02 img{
+		/*width:100%;*//*:41.573%;*//*370/890*/
+	}
+    
+	/*.cont_02 p:last-child*/
+    .event_block{		
+        width:50%;/*:56.179%;*//*500/890*/
+        line-height: 2rem;
+        font-size:1.5rem;
+		
+	}
+	
+	 .event_block02{		
+        width:50%;/*:56.179%;*//*500/890*/
+        line-height: 2.5rem;
+        font-size:2rem;
+		
+	}
+	
+	.event_text{
+    font-size:2rem;
+    line-height: 2.5rem;
+    padding:100px;
+    background-color:rgba(255,255,255,0.65);
+    flex-wrap: wrap;
+	display: block;
+	height: 40vh;
+	vertical-align: middle;
+}
+	.hutomoji{
+		font-weight: bold;
+		font-size: 2rem;
+	}
+	
+/*ここからはフッターらしい*/
+footer p img{
+    width: 20%;/*100/375*/
+/*    position:absolute;
+
+    top:-50px;*/
+}
+
+footer p:first-child{
+	margin:0 auto;
+	}
+	
+#futer{
+	color: #fff;
+	position:absolute;
+	font-size:2rem;
+	top: 35%;
+	right: 20px;
+	text-align: center;
+}
+
+footer ul{
+    float: left;
+    position: absolute;
+    right:0px;
+    bottom: 20px;
+	width: 30%;
+}
+
+footer li{
+    float: left;
+   /* width: 40%;*/
+}
+}
+
+
+
+/*--------------------------
+	PC /1020px以上の設定/
+-------------------------- */
+@media screen and (min-width:1020px) {
+/*PC用のCSSをここに記述*/
+	body{
+		max-width: 1020px;
+	}
+	  #wrapper{
+        overflow: visible;
+    }
+}
+/*この辺はヘッダーらしい*/

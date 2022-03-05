@@ -1,0 +1,68 @@
+@charset "utf-8";
+/* CSS Document */
+/*navのプロパティ*/
+
+
+#nav{/*margin:0 auto;
+    text-align: center;*/
+    height: 45px;
+    width:100%;
+    line-height: 45px;
+    clear: both;
+    /*position:fixed;*/
+    /*top:0px;*/
+    z-index: 1000;
+	margin: 0 auto;
+	background-color:rgba(0,87,12,0.90);
+}
+
+.fixed {
+  position: fixed;
+
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+.menue a{
+	text-decoration: none;
+}
+
+.menue{
+    width: 90%;
+    margin: 0 auto;
+	overflow: hidden;
+	
+}
+
+.menue li{
+    width:20%;
+    /*height: 45px;*/
+    text-align: center;
+    display: block;
+    font-weight:bold;
+    margin-top:10px;
+    /*margin-right: 5px;*/
+    margin: 0 auto;
+    font-size: 1em;
+    float: left;
+	background-color:#1A1200;
+	/*background-image: url("../img/navwaku.png");*/
+	border-right: 5px groove #E3DC28;
+    /*border:1px solid #000000;*/
+    /*list-style: none;*/
+}
+
+.menue li:last-child{
+    margin-right: 0px; 
+	border:none;
+}
+
+.menue a:link{
+	color:#E3DC28;
+}
+
+.menue a:visited{
+	color:#97920F;
+}
